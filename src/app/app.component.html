@@ -1,0 +1,5 @@
+<app-child [item]="currentItem" (newItemEvent)="addItem($event)"> </app-child>
+
+<ul>
+  <li *ngFor="let item of dataArray; let i = index;">{{item}} <button (click)="deleteItem(i)">Delete </button> </li>
+</ul>

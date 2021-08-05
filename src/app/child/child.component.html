@@ -1,0 +1,10 @@
+<h1>TODO list</h1>
+<form [formGroup]="newFormGroup" (ngSubmit)="submitInfo()">
+  <input id="info" type="text" formControlName="data">
+</form>
+
+<h2>@input from parent</h2>
+
+<p>
+  Today's item: {{item}}
+</p>
